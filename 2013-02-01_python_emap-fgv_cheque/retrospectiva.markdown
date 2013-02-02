@@ -25,7 +25,7 @@ objeto inteiro/ponto flutuante correspondente àquele valor.
 
 O código encontra-se no
 [repositório __outros-dojos__ no GitHub do
-DojoRio](https://github.com/dojorio/outros-dojos/tree/master/2013-02-01_emap-fgv_cheque/).
+DojoRio](https://github.com/dojorio/outros-dojos/tree/master/2013-02-01_python_emap-fgv_cheque).
 
 
 ## :-)
