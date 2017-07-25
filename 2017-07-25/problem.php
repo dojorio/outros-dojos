@@ -1,8 +1,8 @@
 <?php
 class Problema
 {
-    public function retornaNumero()
+    public function retornaNumero($numero)
     {
-        return 1;
+        return $numero;
     }
 }
