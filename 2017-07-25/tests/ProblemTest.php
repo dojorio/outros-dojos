@@ -13,13 +13,13 @@ final class ProblemTest extends TestCase
     }
     public function testPassaUm()
     {
-        $problema = new Problema();
-        $retorno = $problema->retornaNumero();
+        $retorno = $this->problema->retornaNumero(1);
         $this->assertEquals(1, $retorno);
     }
     
-    public function testPassaDois()
+    public function testPassaTres()
     {
-        
+        $retorno = $this->problema->retornaNumero(3);
+        $this->assertEquals('Fizz', $retorno);
     }
 }
