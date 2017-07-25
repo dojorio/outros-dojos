@@ -22,4 +22,17 @@ final class ProblemTest extends TestCase
         $retorno = $this->problema->retornaNumero(3);
         $this->assertEquals('Fizz', $retorno);
     }
+    
+    public function testPassaCinco()
+    {
+        $actual = $this->problema->retornaNumero(5);
+        $this->assertEquals('Buzz', $actual);
+    }
+    
+    /**
+     * @expectedException TypeError
+     */
+    public function testParametroIncorreto() {
+        $retorno = $this->problema->retornaNumero("invalido");
+    }
 }
