@@ -28,7 +28,11 @@ final class ProblemTest extends TestCase
         $actual = $this->problema->retornaNumero(5);
         $this->assertEquals('Buzz', $actual);
     }
-    
+    public function testPassaquize()
+    {
+        $retorno = $this->problema->retornaNumero(15);
+        $this->assertEquals('FizzBuzz', $retorno);
+    }
     /**
      * @expectedException TypeError
      */
