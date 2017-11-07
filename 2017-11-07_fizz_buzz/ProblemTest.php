@@ -45,4 +45,14 @@ class ProblemTest extends TestCase
         $this->assertTrue($problem->dividePor($numero, 3));
         $this->assertTrue($problem->dividePor($numero, 5));
     }
+    
+    public function testNumeroNaoDeveDivisivelPor3E5()
+    {
+        require_once 'Problem.php';
+        $numero = 14;
+        $problem = new Problem();
+        $this->assertFalse($problem->dividePor($numero, 3));
+        $this->assertFalse($problem->dividePor($numero, 5));
+    }
+    
 }
