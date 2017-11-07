@@ -5,9 +5,12 @@ require_once 'vendor/autoload.php';
 
 class ProblemTest extends TestCase
 {
+    public function setUp(){
+        require_once 'Problem.php';
+    }
+    
     public function testNumeroDeveSerDivisivelPor3() 
     {
-        require_once 'Problem.php';
         $numero = 3;
         $problem = new Problem();
         $this->assertTrue($problem->dividePor($numero, 3));
@@ -15,7 +18,7 @@ class ProblemTest extends TestCase
     
     public function testDeveRetornarFalseSeONumeroNaoForDivisivelPor3()
     {
-        require_once 'Problem.php';
+        
         $numero = 4;
         $problem = new Problem();
         $this->assertFalse($problem->dividePor($numero, 3));
@@ -23,7 +26,7 @@ class ProblemTest extends TestCase
     
     public function testNumeroDeveSerDivisivelPor5()
     {
-        require_once 'Problem.php';
+        
         $numero = 5;
         $problem = new Problem();
         $this->assertTrue($problem->dividePor($numero, 5));
@@ -31,7 +34,7 @@ class ProblemTest extends TestCase
     
     public function testDeveRetornarFalseSeONumeroNaoForDivisivelPor5()
     {
-        require_once 'Problem.php';
+        
         $numero = 4;
         $problem = new Problem();
         $this->assertFalse($problem->dividePor($numero, 5));
@@ -39,7 +42,7 @@ class ProblemTest extends TestCase
     
     public function testNumeroDeveSerDivisivelPor3E5()
     {
-        require_once 'Problem.php';
+        
         $numero = 15;
         $problem = new Problem();
         $this->assertTrue($problem->dividePor($numero, 3));
@@ -48,11 +51,15 @@ class ProblemTest extends TestCase
     
     public function testNumeroNaoDeveDivisivelPor3E5()
     {
-        require_once 'Problem.php';
+        
         $numero = 14;
         $problem = new Problem();
         $this->assertFalse($problem->dividePor($numero, 3));
         $this->assertFalse($problem->dividePor($numero, 5));
     }
-    
+
+    public function testDeveRetornarFizzSeForDivisivelPor3()
+    {
+        
+    }
 }
