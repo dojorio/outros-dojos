@@ -101,4 +101,18 @@ class ProblemTest extends TestCase
         $this->AssertEquals($problem->retornaFizz($numero),false);
         $this->AssertEquals($problem->retornaBuzz($numero),false);
     }
+    
+    public function testDeveRetornarFizzBuzzJuntoSeForDivisivelPor5e3()
+    {
+        $numero = 15;
+        $problem = new Problem();
+        $this->AssertEquals($problem->retornaFizzBuzz($numero),'FizzBuzz');
+    }
+    
+    public function testNaoDeveRetornarFizzBuzzJuntoSeNaoForDivisivelPor5e3()
+    {
+        $numero = 14;
+        $problem = new Problem();
+        $this->AssertEquals($problem->retornaFizzBuzz($numero),'');
+    }
 }
