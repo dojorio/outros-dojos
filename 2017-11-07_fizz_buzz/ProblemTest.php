@@ -60,8 +60,15 @@ class ProblemTest extends TestCase
 
     public function testDeveRetornarFizzSeForDivisivelPor3()
     {
-        $numero = 1;
+        $numero = 3;
         $problem = new Problem();
         $this->AssertEquals($problem->retornaFizz($numero),"Fizz");
+    }
+    
+    public function testDeveNaoRetornarFizzSeNaoForDivisivelPor3()
+    {
+        $numero = 4;
+        $problem = new Problem();
+        $this->AssertEquals($problem->retornaFizz($numero),false);
     }
 }
