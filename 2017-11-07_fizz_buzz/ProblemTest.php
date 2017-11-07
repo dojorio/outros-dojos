@@ -25,8 +25,14 @@ class ProblemTest extends TestCase
     
     public function testRetornaStringBuzz()
     {
-        $this->assertEquals('Buzz', $this->problem->retornaString(3));
+        $this->assertEquals('Buzz', $this->problem->retornaString(5));
     }
+    
+    public function testTemCemElementos()
+    {
+        $this->assertCount(100, $this->problem->retornaString(3), 'Deu pau');
+    }
+    
     
     
     public function testDeveRetornarFalseSeONumeroNaoForDivisivelPor3()
