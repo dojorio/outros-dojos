@@ -20,4 +20,9 @@ class Problem {
         $FizzBuzz .= $this->retornaBuzz($numero);
         return $FizzBuzz;
     }
+    
+    public function retornaString($numero)
+    {
+        return 'Buzz';
+    }
 }

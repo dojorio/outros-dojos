@@ -23,6 +23,12 @@ class ProblemTest extends TestCase
         $this->assertEquals('Fizz', $this->problem->retornaString(3));
     }
     
+    public function testRetornaStringBuzz()
+    {
+        $this->assertEquals('Buzz', $this->problem->retornaString(3));
+    }
+    
+    
     public function testDeveRetornarFalseSeONumeroNaoForDivisivelPor3()
     {
         
