@@ -113,6 +113,6 @@ class ProblemTest extends TestCase
     {
         $numero = 14;
         $problem = new Problem();
-        $this->AssertEquals($problem->retornaFizzBuzz($numero),'');
+        $this->AssertEquals('', $problem->retornaFizzBuzz($numero));
     }
 }
