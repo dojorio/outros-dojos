@@ -20,4 +20,12 @@ class Problem {
         $FizzBuzz .= $this->retornaBuzz($numero);
         return $FizzBuzz;
     }
+    public function retornaLista($num) {
+        $lista = [];
+        for($i = 1 ; $i <= $num; $i++ )
+        {
+            $lista[] = $this->retornaString($i);
+        }
+        return $lista;
+    }
 }

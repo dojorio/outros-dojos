@@ -30,7 +30,7 @@ class ProblemTest extends TestCase
     
     public function testTemCemElementos()
     {
-        $this->assertCount(100, $this->problem->retornaString(3), 'Deu pau');
+        $this->assertCount(100, $this->problem->retornaLista(100), 'Deu pau');
     }
     
     
