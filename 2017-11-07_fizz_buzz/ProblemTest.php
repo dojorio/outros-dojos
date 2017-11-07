@@ -20,4 +20,28 @@ class ProblemTest extends TestCase
         $problem = new Problem();
         $this->assertFalse($problem->dividePor($numero, 3));
     }
+    
+    public function testNumeroDeveSerDivisivelPor5()
+    {
+        require_once 'Problem.php';
+        $numero = 5;
+        $problem = new Problem();
+        $this->assertTrue($problem->dividePor($numero, 5));
+    }
+    
+    public function testDeveRetornarFalseSeONumeroNaoForDivisivelPor5()
+    {
+        require_once 'Problem.php';
+        $numero = 4;
+        $problem = new Problem();
+        $this->assertFalse($problem->dividePor($numero, 5));
+    }
+    
+    public function testNumeroDeveSerDivisivelPor3E5()
+    {
+        require_once 'Problem.php';
+        $numero = 5;
+        $problem = new Problem();
+        $this->assertTrue($problem->dividePor3E5($numero, 5, 3));
+    }
 }
