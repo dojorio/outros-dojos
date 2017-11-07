@@ -11,6 +11,6 @@ class Problem {
     }
 
     public function retornaBuzz($numero){
-        return 'Buzz';
+        return ($this->dividePor($numero, 5))?'Buzz':false;
     }
 }
