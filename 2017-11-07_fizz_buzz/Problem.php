@@ -6,5 +6,7 @@ class Problem {
         return $numero%$divisor==0; 
     }
     
-    
+    public function retornaFizz($numero){
+        return ($this->dividePor($numero, 3))?'Fizz':false;
+    }
 }
