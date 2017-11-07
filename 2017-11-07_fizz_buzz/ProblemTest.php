@@ -5,8 +5,10 @@ require_once 'vendor/autoload.php';
 
 class ProblemTest extends TestCase
 {
+    private $problem;
     public function setUp(){
         require_once 'Problem.php';
+        $this->problem = new Problem();
     }
     
     public function testNumeroDeveSerDivisivelPor3() 
@@ -14,6 +16,11 @@ class ProblemTest extends TestCase
         $numero = 3;
         $problem = new Problem();
         $this->assertTrue($problem->dividePor($numero, 3));
+    }
+    
+    public function testRetornaStringFizz()
+    {
+        $this->assertEquals('Fizz', $this->problem->retornaString(3));
     }
     
     public function testDeveRetornarFalseSeONumeroNaoForDivisivelPor3()
