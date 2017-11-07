@@ -119,13 +119,13 @@ class ProblemTest extends TestCase
     {
         $numero = 15;
         $problem = new Problem();
-        $this->AssertEquals($problem->retornaFizzBuzz($numero),'FizzBuzz');
+        $this->AssertEquals($problem->retornaString($numero),'FizzBuzz');
     }
     
     public function testNaoDeveRetornarFizzBuzzJuntoSeNaoForDivisivelPor5e3()
     {
         $numero = 14;
         $problem = new Problem();
-        $this->AssertEquals('', $problem->retornaFizzBuzz($numero));
+        $this->AssertEquals('', $problem->retornaString($numero));
     }
 }

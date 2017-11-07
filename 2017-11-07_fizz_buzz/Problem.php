@@ -14,15 +14,10 @@ class Problem {
         return ($this->dividePor($numero, 5))?'Buzz':false;
     }
     
-    public function retornaFizzBuzz($numero)
+    public function retornaString($numero)
     {
         $FizzBuzz = $this->retornaFizz($numero);
         $FizzBuzz .= $this->retornaBuzz($numero);
         return $FizzBuzz;
-    }
-    
-    public function retornaString($numero)
-    {
-        return 'Buzz';
     }
 }
