@@ -3,6 +3,6 @@ class Problem {
 
     public function dividePor($numero, $divisor)
     {
-        return 3; 
+        return $numero%3==0; 
     }
 }
