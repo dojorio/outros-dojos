@@ -5,3 +5,8 @@
 vendor
 *.lock
 *.pyc
+
+# Eclipse
+.buildpath
+.project
+.settings
