@@ -1,0 +1,7 @@
+default:
+  extensions:
+    Behat\MinkExtension:
+      sessions:
+        javascript:
+          selenium2:
+            browser: 'chrome'
