@@ -21,4 +21,12 @@ class ProblemTest extends TestCase
         $corredor = $Funcionario->criaCorredor();
         $this->assertInternalType('array', $corredor);
     }
+    
+    public function testDaLorhanaVerificarCorredorSeTemQuatroSalas() {
+        $Funcionario = new Funcionario();
+        $corredor = $Funcionario->criaCorredor(4);
+        $this->assertCount(4, $corredor);
+        
+    }
+    
 }

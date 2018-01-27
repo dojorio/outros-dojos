@@ -1,7 +1,7 @@
 <?php
 class Funcionario
 {
-    public function criaCorredor()
+    public function criaCorredor($n)
     {
         return array();
     }
