@@ -26,7 +26,6 @@ class ProblemTest extends TestCase
         $Funcionario = new Funcionario();
         $corredor = $Funcionario->criaCorredor(3);
         $this->assertCount(3, $corredor);
-        
     }
     
     public function testDaLorhanaVerificarCorredorSeTemQuatroSalas() {
@@ -36,4 +35,10 @@ class ProblemTest extends TestCase
         
     }
     
+    public function testTodasDevemEstarAcesas()
+    {
+        $Funcionario = new Funcionario();
+        $Funcionario->criaCorredor(4);
+        $this->assertCount(4, $corredor);
+    }
 }

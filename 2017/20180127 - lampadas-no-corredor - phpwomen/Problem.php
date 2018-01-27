@@ -1,14 +1,12 @@
 <?php
 class Funcionario
 {
+    public $corredor = array();
     public function criaCorredor($n)
     {
-        
-        $corredor=array();
         for($i =1; $i<=$n;$i++){
-            $corredor[$i] = 0;
-            
+            $this->corredor[$i] = 0;
         }
-        return $corredor;
+        return $this->corredor;
     }
 }
