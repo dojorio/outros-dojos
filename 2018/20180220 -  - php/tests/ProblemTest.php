@@ -16,7 +16,7 @@ require dirname(__FILE__) . '/../Problem.php';
 class ProblemTest extends TestCase
 {
     function testVerificarSeExisteValor(){
-        $valor = 50;
-        $this->assertEmpty($valor);
+        $model = new Problem();
+        $this->assertEmpty($model->valor);
     }
 }
