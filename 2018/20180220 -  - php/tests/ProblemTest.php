@@ -25,4 +25,10 @@ class ProblemTest extends TestCase
         $model->valor = 50;
         $this->assertInternalType('integer', $model->valor);
     }
+    
+    function testVerificarSeValorNaoEUmNumero(){
+        $model = new Problem();
+        $model->valor = 'abacate';
+        $this->assertEmpty($model->valorInformado());
+    }
 }
