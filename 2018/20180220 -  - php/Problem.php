@@ -16,5 +16,8 @@ class Problem
         }
         return $this->valor;
     }
-    
+    public function troco()
+    {
+        return [10];
+    }
 }

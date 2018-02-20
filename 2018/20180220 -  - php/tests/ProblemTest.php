@@ -60,8 +60,15 @@ class ProblemTest extends TestCase
     function testVerificarSeValorEhMaiorOuIgualADez()
     {
         $model = new Problem();
-        $model->valor = 9;
+        $model->valor = 10;
         $this->assertEquals(10, $model->valorInformado(), "vc errou");
+    }
+    
+    function testRetornaUmaNota()
+    {
+        $model = new Problem();
+        $model->valor = 10;
+        $this->assertCount(1, $model->troco());
     }
     
 }
