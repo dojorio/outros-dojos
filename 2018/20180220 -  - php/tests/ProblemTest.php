@@ -31,4 +31,18 @@ class ProblemTest extends TestCase
         $model->valor = 'abacate';
         $this->assertEmpty($model->valorInformado());
     }
+    function testVerificarSeValorEhMenorQueDez(){
+        $model = new Problem();
+        $model->valor = 9;
+        $this->assertEmpty($model->valorInformado());
+        
+    }
+    
+    function testVerificarSeValorNaoEhDivisivelPorDez(){
+        $model = new Problem();
+        $model->valor = 12;
+        $this->assertEmpty($model->valorInformado());
+        
+    }
+    
 }
