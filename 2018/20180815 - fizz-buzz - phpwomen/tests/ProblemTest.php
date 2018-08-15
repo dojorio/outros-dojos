@@ -49,7 +49,7 @@ class ProblemTest extends TestCase
         $problem = new Problem();
         $this->assertEquals("Buzz", $problem->fizzBuzz()[4]);
     }
-    public function testQuinzePosicaoEhFizz(){
+    public function testQuinzePosicaoEhFizzBuzz(){
         $problem = new Problem();
         $this->assertEquals("FizzBuzz", $problem->fizzBuzz()[14]);
     }
