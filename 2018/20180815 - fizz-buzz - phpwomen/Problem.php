@@ -6,10 +6,17 @@ class Problem
         $arr=array();
         for ($a=1; $a<=100; $a++){
             if( $a % 3 == 0){
+                
                 array_push($arr,"Fizz");
              
                 
-            } else {
+            } elseif ( $a % 5 == 0){
+                array_push($arr,"Buzz");
+            } elseif ( ($a % 3 == 0) && ($a % 5 == 0) ){
+                array_push($arr,"FizzBuzz");
+            }
+            
+            else {
                 array_push($arr, $a); 
             }
           
@@ -19,8 +26,8 @@ class Problem
             
             
        
-        $arr[4]="Buzz";
-        $arr[14]="FizzBuzz";
+        //$arr[4]="Buzz";
+        //$arr[14]="FizzBuzz";
         return $arr; 
     }
 }
