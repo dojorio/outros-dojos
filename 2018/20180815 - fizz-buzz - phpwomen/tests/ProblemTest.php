@@ -15,9 +15,16 @@ require dirname(__FILE__) . '/../Problem.php';
 
 class ProblemTest extends TestCase
 {
-    public function testTemCemElementos()
+    public function testRetornaUmArray()
     {
         $problem = new Problem();
         $this->assertInternalType('array', $problem->fizzBuzz());
     }
+    
+    public function testTemCemElementos()
+    {
+        $problem = new Problem();
+        $this->assertCount(100, $problem->fizzBuzz()); 
+    }
+    
 }
