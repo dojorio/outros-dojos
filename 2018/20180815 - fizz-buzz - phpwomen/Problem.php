@@ -6,12 +6,12 @@ class Problem
         $arr=array();
         for ($a=1; $a<=100; $a++){
             if( $a % 3 == 0){
-                $a = "Fizz";
+                array_push($arr,"Fizz");
+             
                 
+            } else {
+                array_push($arr, $a); 
             }
-           
-          array_push($arr, $a);  
-          
           
         } 
         
