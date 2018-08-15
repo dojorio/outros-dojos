@@ -40,5 +40,13 @@ class ProblemTest extends TestCase
     }
     
     
+    public function testTerceiraPosicaoEhFizz(){
+        $problem = new Problem();
+        $this->assertEquals("Fizz", $problem->fizzBuzz()[2]);
+        
+            
+    }
+    
+    
     
 }

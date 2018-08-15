@@ -12,7 +12,7 @@ class Problem
         } 
         
         
-        
+        $arr[2]="Fizz";
         return $arr; 
     }
 }
