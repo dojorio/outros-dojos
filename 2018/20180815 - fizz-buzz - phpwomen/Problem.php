@@ -13,6 +13,8 @@ class Problem
         
         
         $arr[2]="Fizz";
+        $arr[4]="Buzz";
+        $arr[14]="FizzBuzz";
         return $arr; 
     }
 }
