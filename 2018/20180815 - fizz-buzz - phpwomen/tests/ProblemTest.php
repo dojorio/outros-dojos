@@ -27,5 +27,18 @@ class ProblemTest extends TestCase
         $this->assertCount(100, $problem->fizzBuzz()); 
     }
     
+    public function testPrimeiroIndiceEhNumero()
+    {
+        $problem = new Problem();
+        $this->assertTrue(is_numeric($problem->fizzBuzz()[0]));
+    }
+    
+    public function testPrimeiroIndiceEhNumeroUm()
+    {
+        $problem = new Problem();
+        $this->assertEquals(1, $problem->fizzBuzz()[0]);
+    }
+    
+    
     
 }
